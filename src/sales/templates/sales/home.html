@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+{{h}}
+<hr>
+
+<form action='' method='POST'>
+  {% csrf_token %}
+  {{form}}
+</form>
+{% endblock content %}
